@@ -1,0 +1,6 @@
+langgraph>=0.4
+langchain-core>=0.3
+langchain-anthropic>=0.3
+langchain-mcp-adapters>=0.1
+mcp>=1.6
+pydantic>=2.7

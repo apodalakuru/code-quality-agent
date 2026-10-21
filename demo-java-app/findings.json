@@ -1,0 +1,32 @@
+[
+  {
+    "id": "demo-1",
+    "source": "codeql",
+    "rule": "java/sql-injection",
+    "severity": "CRITICAL",
+    "file": "src/main/java/com/example/claims/ClaimLookupDao.java",
+    "line": 21,
+    "message": "This query depends on a user-provided value (memberId).",
+    "rule_description": "Building a SQL query from user-controlled sources is vulnerable to insertion of malicious SQL code by the user. Use a PreparedStatement with bind parameters."
+  },
+  {
+    "id": "demo-2",
+    "source": "sonar",
+    "rule": "java:S2245",
+    "severity": "CRITICAL",
+    "file": "src/main/java/com/example/claims/ReferenceNumberGenerator.java",
+    "line": 9,
+    "message": "Make sure that using this pseudorandom number generator is safe here.",
+    "rule_description": "Using pseudorandom number generators (PRNGs) is security-sensitive. Use java.security.SecureRandom for values that must be unpredictable."
+  },
+  {
+    "id": "demo-3",
+    "source": "sonar",
+    "rule": "java:S108",
+    "severity": "MAJOR",
+    "file": "src/main/java/com/example/claims/AccumulatorCalculator.java",
+    "line": 16,
+    "message": "Either remove or fill this block of code.",
+    "rule_description": "An empty catch block hides errors. Handle the exception, rethrow it as a meaningful exception, or document why it is safe to ignore."
+  }
+]
